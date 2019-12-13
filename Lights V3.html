@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alex's New and Improved Page - Lights</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    <script src="treasure.js"></script>
+    <script src="GameFile.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    </style>
+
+</head>
+<body class="w3-light-grey">
+
+<style>
+    table{
+        width:50%
+    }
+    td{
+        width:33.333%;
+        height: 50px;
+        border: 6px solid #222;
+    }
+    td:after{
+        content: '';
+        display: block;
+        margin-top: 50%;
+    }
+</style>
+<h2 id="demo" align="center">The Game </h2>
+<div align="right" class="w3-container w3-card w3-white w3-margin-bottom">
+    <a href="Index V4.html"><input type="button" value="Index"></a>
+    <a href="About V2.html"><input type="button" value="About"></a>
+    <a href="Key V2.html"><input type="button" value="Key"></a>
+    <a href="Lights V1.html"><input type="button" value="Game" disabled></a>
+    <script>
+        document.getElementById("demo").style.color = "red";
+    </script>
+</div>
+<table id="LightGrid" align="center">
+    <tr>
+        <td class="bg-light" id="1"></td>
+        <td class="bg-light" id="4"></td>
+    </tr>
+    <tr>
+        <td class="bg-light" id="2"></td>
+        <td class="bg-light" id="5"></td>
+    </tr>
+    <tr>
+        <td class="bg-light" id="3"></td>
+        <td class="bg-light" id="6"></td>
+    </tr>
+</table>
+<div align="center" class="w3-container w3-card w3-white w3-margin-bottom">
+    <input type="button" value="Start" onclick="StartGame()">
+    <input type="button" value="Restart" onclick="RestartGame()" id="Restart">
+</div>
+
+</body>
+</html>
